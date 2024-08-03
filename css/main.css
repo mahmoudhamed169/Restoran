@@ -1,0 +1,586 @@
+body {
+    font-family: "Heebo", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #F1F8FF;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0f172be8;
+    --pColor: #666565
+}
+
+header {
+    background-image: url('../images/bg-hero.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    height: 65px;
+    z-index: 9999;
+    background-color: var(--dark);
+    /* padding-top: 10px !important; */
+
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.navbar-brand {
+    color: var(--primary);
+   
+    font-weight: 800 !important;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 35px !important;
+    transition: all 0.5s;
+}
+.navbar-brand:hover{
+    color: var(--primary);
+}
+
+.nav-item a {
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+    color: var(--light);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.5s;
+
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--light);
+    border: var(--primary);
+    font-size: 1rem;
+    border-radius: 2px;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: all 0.5s;
+
+}
+
+.btn:hover {
+    background-color: #FEAF39;
+    color: #fff;
+}
+
+.nav-item .home {
+    color: var(--primary);
+}
+
+.navbar-nav a:hover {
+    color: var(--primary);
+}
+
+
+
+
+.rotating-image {
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hero-header {
+    background-color: var(--dark);
+}
+
+h1 {
+    font-weight: 800 !important;
+    line-height: 77px;
+    font-size: 64px;
+   
+}
+
+
+
+/* ....................... services start */
+section {
+    background-color: #Fff;
+}
+
+.service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+i {
+    color: var(--primary);
+
+}
+
+.service-item h5 {
+    color: var(--dark);
+}
+
+p {
+    color: var(--pColor);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+.service-item i,
+.service-item h5 .service-item p {
+    transition: all 0.5;
+}
+
+.service-item:hover {
+    background-color: var(--primary);
+
+}
+
+.service-item:hover i {
+    color: var(--light);
+
+}
+
+.service-item:hover h5 {
+    color: var(--light);
+
+}
+
+.service-item:hover p {
+    color: var(--light);
+
+}
+h5{
+    
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+
+}
+
+/* ....................... services end */
+
+
+/* ...........about start */
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    color: var(--primary);
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#about .section-title::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+}
+
+h2 {
+    font-weight: 800;
+    line-height:48px;
+    color: #0F172B;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 40px;
+}
+
+/* color: var(--dark); */
+
+.border-start {
+    border-color: var(--primary) !important;
+}
+
+#about h3 {
+    color: var(--primary);
+    font-size: 48px ;
+    font-weight: 800;
+    line-height: 58px;
+
+}
+
+/* @keyframes countUp {
+    from { content: '1'; }
+    to { content: '15'; }
+  } */
+
+/* ...........about end */
+/* ...........menu start */
+#menu .section-title::after {
+
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+
+}
+
+#menu .section-title::before {
+
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+
+}
+
+.nav-tabs p {
+    font-size: 0.9rem;
+    color: #666565 !important;
+
+}
+
+.nav-tabs h6 {
+    color: #000;
+}
+
+.portflio-nav .nav-item .active {
+    border-top: 0;
+    border-bottom: 2px solid var(--primary) !important;
+}
+
+h5 {
+    font-weight: 700;
+    line-height: 1.2;
+    color: #0F172B;
+    
+    font-size: 20px;
+}
+
+.tab-content span {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 800 ;
+    line-height: 1.2;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.nav-tabs h6{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800 !important;
+}
+
+
+
+
+/* ...........menu end */
+
+.video {
+    background-image: url("../images/video.jpg");
+    height: 520px;
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Pulse {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    background-color: var(--primary);
+
+}
+
+.Pulse i {
+    left: 35%;
+    top: 25%;
+    position: absolute;
+    color: #000;
+    font-size: 50px;
+
+}
+
+.Pulse span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    opacity: 0.5;
+    animation: pluseAnimation 2s ease-out infinite;
+}
+
+@keyframes pluseAnimation {
+    50% {
+
+        transform: scale(1.5);
+        opacity: 0.2;
+
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2);
+
+    }
+
+}
+
+#res .section-title::after {
+
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+
+}
+.caption{
+    background-color: #0F172B;
+   
+} 
+
+h2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 28px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ....................... Team .............  */
+#team .section-title::after {
+
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+
+}
+
+#team .section-title::before {
+
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+
+}
+.team-member {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    height: calc(100% - 38px);
+    transition: all 0.5s;
+}
+.team-member img {
+    transition: all 0.5s;
+}
+.team-member:hover {
+    height: 100%;
+}
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+.team-member a {
+    border-radius : 38px 38px 0 0 ;
+        width: 38px;
+    height: 38px;
+}
+.team-member a i {
+    color: #Fff;
+}
+/* ............................  */
+#Testimonial .section-title::after {
+
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+
+}
+
+#Testimonial .section-title::before {
+
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+
+}
+
+
+.owl-carousel .owl-nav button.owl-next , .owl-carousel .owl-nav button.owl-prev {
+    visibility: hidden;
+}
+.owl-carousel .item {
+    width:400px;
+    margin-right: 18px;
+    /* background-color: var(--primary); */
+    transition: all 1s !important;
+}
+.client-box  {
+    transition: all 0.5s;
+}
+
+.owl-carousel  .center .client-box  {
+    background-color: var(--primary);
+    color: #F1F8FF;
+}
+.owl-carousel  .center .client-box p , .owl-carousel  .center .client-box h5 {
+    color: #Fff;
+
+}
+.client-box i , .client-box p , .client-box h5 {
+    transition: all 0.5s;
+}
+.owl-carousel  .center .client-box i {
+    color: #Fff;
+    
+}
+.owl-theme .owl-dots .owl-dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    transition: .5s;
+}
+.owl-theme .owl-dots  .active {
+    background-color: var(--primary);
+    border: var(--primary);
+}
+.owl-theme .owl-dots .owl-dot span {
+    visibility: hidden;
+}
+/* .......................... Footer */
+footer {
+    background-color: #0F172B;
+}
+footer .section-title::after {
+
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+
+}
+footer a {
+    color: #fff;
+    font-weight: 400;
+    
+    line-height: 1.9;
+}
+.company a {
+    font-family: 'Nunito Sans', sans-serif; 
+    
+}
+.company a:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+footer i  ,footer p {
+    color: #Fff;
+    transition: all 0.5;
+
+}
+.social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    transition: .3s;
+}
+.social:hover i {
+    color: var(--primary);
+}
+.social:hover {
+    color: var(--primary);
+    background-color: #Fff;
+}
+footer input {
+    border-color:var(--primary)
+}
+.copyright a {
+    line-height: 0 ;
+}
+.copyright
+{
+    font-size: 15px;
+}
+.back-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    font-style: italic;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+.back-to-top i {
+    color: var(--light);
+    padding: 10px 0;
+}
